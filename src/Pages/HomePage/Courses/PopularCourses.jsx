@@ -1,6 +1,6 @@
-import { Card, CardHeader } from "@material-tailwind/react";
-import { FaCommentDots, FaEllipsisVertical } from "react-icons/fa6";
-import { Link } from "react-scroll";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const PopularCourses = () => {
   const cardDetails = [
@@ -38,7 +38,7 @@ const PopularCourses = () => {
       authorDesignation: "Civil Engineer",
       image:
         "https://us.images.westend61.de/0001890900pw/aerial-view-of-dhaka-city-with-residential-area-at-sunset-dhaka-bangladesh-AAEF22036.jpg",
-      title: "Infrastructure Improvements in Dhaka",
+      title: "Infrastructure Improvements in Dhaka Bangladesh",
       participator: 175,
       price: 200,
       totalVideo: 20
@@ -77,91 +77,120 @@ const PopularCourses = () => {
       authorDesignation: "Political Analyst",
       image:
         "https://images.prothomalo.com/prothomalo-english%2F2023-04%2Fc9065616-4564-443f-b409-066dce650145%2FJatiya_Sangsad.webp?rect=0%2C111%2C800%2C420&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&overlay=&overlay_position=bottom&overlay_width_pct=1",
-      title: "Political Landscape of Bangladesh",
+      title: "Political Landscape of Dhaka Bangladesh",
       participator: 140,
       price: 300,
       totalVideo: 27
     },
   ];
 
+  const [sliderRef, instanceRef] = useKeenSlider({
+    slides: {
+      perView: 3,
+      spacing: 16,
+    },
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: { perView: 2, spacing: 16 },
+      },
+      "(max-width: 600px)": {
+        slides: { perView: 1, spacing: 16 },
+      },
+    },
+    loop: true,
+  });
+
   return (
     <div className="bg-primary h-screen py-20">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold">Popular courses of the week</h1>
-        <p className="w-1/5 mx-auto text-xs">
+        <p className="md:w-1/5 mx-auto text-xs py-3">
           List of the most popular lists that are often studied by our members
         </p>
       </div>
+      
+      {/* Cards Slider */}
+      <div className="relative container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+        <div className="keen-slider" ref={sliderRef}>
+          {cardDetails.map((card) => (
+            <div key={card.id} className="keen-slider__slide bg-white rounded-lg">
+              <div className="overflow-hidden hover:shadow-xl">
+                <div className="m-0 rounded-none">
+                  <div className="relative h-56 overflow-hidden">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    />
+                  </div>
+                </div>
 
-      <div className="md:grid grid-cols-3 p-10 space-y-5 md:space-y-0 justify-center items-center container mx-auto gap-16">
-        {cardDetails.map((card) => (
-          <Card key={card.id} className="overflow-hidden hover:shadow-xl">
-            <CardHeader
-              floated={false}
-              shadow={false}
-              color="transparent"
-              className="m-0 rounded-none"
-            >
-              <div className="relative h-56 overflow-hidden">
-                <img
-                  src={card.image}
-                  alt={card.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            </CardHeader>
-
-            <div className="">
-              <div className="px-3 py-5">
-                <Link
-                  to="/"
-                  className="md:text-xl text-black font-semibold text-sm "
-                >
-                  {card.title}
-                </Link>
-              </div>
-              <div className="flex gap-10 items-center px-3 pb-5">
-                <div className="flex items-center gap-3">
-                  <div className="avatar ">
-                    <div className="w-10 rounded-full">
-                      <img src={card.authorImage} alt="" />
+                <div className="">
+                  <div className="px-3 py-5">
+                    <a
+                      className="md:text-xl text-black font-semibold text-sm "
+                    >
+                      {card.title}
+                    </a>
+                  </div>
+                  <div className="flex gap-10 items-center px-3 pb-5">
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="w-10 rounded-full">
+                          <img src={card.authorImage} alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <p>{card.authorName}</p>
+                        <p className="text-xs">{card.authorDesignation}</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="w-10 rounded-full">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <p>{card.participator}</p>
+                        <p className="text-xs">Participator</p>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <p>{card.authorName}</p>
-                    <p className="text-xs">{card.authorDesignation}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="avatar ">
-                    <div className="w-10 rounded-full">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
-                        alt=""
-                      />
+                  <div className="flex justify-between items-center p-3 bg-blue-gray-50">
+                    <div>
+                      <button className="btn-error">Buy Now</button>
+                    </div>
+                    <div className="">
+                      <h1 className="text-3xl font-semibold text-black">${card.price}<span className="text-xs font-normal text-blue-gray-600">/{card.totalVideo} Video</span> </h1>
                     </div>
                   </div>
-                  <div>
-                    <p>{card.participator}</p>
-                    <p className="text-xs">Participator</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-between items-center p-3 bg-blue-gray-50">
-                <div>
-                  <h1>{card.views} Views</h1>
-                </div>
-                <div className="flex items-center gap-2">
-                  <p>7</p>
-                  <FaCommentDots />
                 </div>
               </div>
             </div>
-          </Card>
-        ))}
+          ))}
+        </div>
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={() => instanceRef.current?.prev()}
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 border-2 bg-white hover:bg-[#245D51] text-black hover:text-white p-3 rounded-full shadow-lg"
+        >
+          <FaChevronLeft />
+        </button>
+        <button
+          onClick={() => instanceRef.current?.next()}
+          className="absolute right-3 top-1/2 transform -translate-y-1/2 border-2 bg-white hover:bg-[#245D51] text-black hover:text-white p-3 rounded-full shadow-lg"
+        >
+          <FaChevronRight />
+        </button>
       </div>
     </div>
   );
 };
 
 export default PopularCourses;
+
