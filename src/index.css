@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary{ 
+    @apply bg-[#CB8461] hover:bg-transparent border-[#CB8461] border duration-500 text-white p-2 rounded
+  }
+  .btn-secondary{
+    @apply border border-[#CB8461] hover:bg-[#CB8461] p-2 duration-500 text-white rounded
+  }
+  .btn-error{
+    @apply  bg-[#245D51] hover:bg-transparent border-[#245D51] p-2 duration-500 text-white rounded
+  }
+  .bg-primary{
+    @apply bg-[#245D51]
+  }
+  .text-primary{
+    @apply text-[#CB8461]
+  }
+  .text-secondary{
+    @apply text-[#245D51]
+  }
