@@ -3,11 +3,11 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div id="home" className=" p-4 h-screen text-white bg-primary pt-20">
+    <div id="home" className=" p-4 md:h-screen text-white bg-primary pt-20">
       <div className="container mx-auto ">
       <div className="md:flex justify-between items-center gap-10 ">
-        <div className="md:w-1/2 h-screen flex flex-col justify-center items-center">
-          <div><h1 className="text-6xl font-semibold leading-snug">
+        <div className="md:w-1/2 md:h-screen flex flex-col justify-center items-center">
+          <div><h1 className="md:text-6xl text-4xl font-semibold leading-snug">
             There is always something new for us to learn
           </h1>
           <p className="text-xs md:w-1/2 my-4">

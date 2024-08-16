@@ -15,25 +15,30 @@ const Navbar = () => {
           Home
         </Link>
       </li>
-
-      <li onClick={() => setDropdownOpen(false)}>
-        <Link to="skills" activeClass="active" smooth={true} spy={true}>
-          Skills
-        </Link>
-      </li>
-      <li onClick={() => setDropdownOpen(false)}>
-        <Link to="projects" activeClass="active" smooth={true} spy={true}>
-          Projects
-        </Link>
-      </li>
-      <li onClick={() => setDropdownOpen(false)}>
-        <Link to="services" activeClass="active" smooth={true} spy={true}>
-          Services
-        </Link>
-      </li>
       <li onClick={() => setDropdownOpen(false)}>
         <Link to="about" activeClass="active" smooth={true} spy={true}>
           About
+        </Link>
+      </li>
+      <li onClick={() => setDropdownOpen(false)}>
+        <Link to="course" activeClass="active" smooth={true} spy={true}>
+          Course
+        </Link>
+      </li>
+      <li onClick={() => setDropdownOpen(false)}>
+        <Link to="skill" activeClass="active" smooth={true} spy={true}>
+          Skill
+        </Link>
+      </li>
+      <li onClick={() => setDropdownOpen(false)}>
+        <Link to="subscribe" activeClass="active" smooth={true} spy={true}>
+          Subscribe
+        </Link>
+      </li>
+      
+      <li onClick={() => setDropdownOpen(false)}>
+        <Link to="testimonial" activeClass="active" smooth={true} spy={true}>
+          Testimonial
         </Link>
       </li>
     </>
@@ -67,7 +72,7 @@ const Navbar = () => {
           {dropdownOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52 right-0"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white text-black rounded-box w-52 right-0"
             >
               {navItems}
               <li>

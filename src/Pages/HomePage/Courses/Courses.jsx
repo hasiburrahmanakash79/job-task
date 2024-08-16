@@ -2,7 +2,7 @@
 
 const Courses = () => {
   return (
-    <div className="container mx-auto p-4 pt-20">
+    <div id="about" className="container mx-auto p-4 pt-20">
       <div className="text-center space-y-5">
         <h2 className="text-4xl font-semibold">
           Trusted more than <span className="text-primary">100+ </span>in the

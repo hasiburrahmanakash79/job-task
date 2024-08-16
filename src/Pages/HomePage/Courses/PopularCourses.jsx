@@ -101,7 +101,7 @@ const PopularCourses = () => {
   });
 
   return (
-    <div className="bg-primary h-screen flex flex-col justify-center items-center py-10">
+    <div id="course" className="bg-primary h-screen flex flex-col justify-center items-center py-10">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold">Popular courses of the week</h1>
         <p className="md:w-1/2 mx-auto text-xs py-3">

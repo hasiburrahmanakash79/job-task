@@ -3,7 +3,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 
 const SkillShoot = () => {
   return (
-    <div className="container mx-auto h-screen p-3">
+    <div id="skill" className="container mx-auto h-screen p-3">
       <div className="md:grid grid-cols-2 justify-center items-center gap-10 py-14">
         <div className=" w-1/2 mx-auto hidden md:flex">
           <img

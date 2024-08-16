@@ -79,7 +79,7 @@ const Testimonial = () => {
   });
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center py-20 bg-[#F8F8F8] relative">
+    <div id="testimonial" className="h-screen flex flex-col justify-center items-center py-20 bg-[#F8F8F8] relative">
       <div className="text-center">
         <h1 className="text-4xl font-semibold">
           What do they <span className="text-primary">say?</span>
