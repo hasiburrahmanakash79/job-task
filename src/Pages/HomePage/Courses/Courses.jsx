@@ -41,22 +41,22 @@ const Courses = () => {
       </div>
 
       <div className="bg-[#F2E7DB] p-10 rounded-lg my-16">
-        <div className="grid grid-cols-2">
-          <div className="space-y-7">
+        <div className="md:grid grid-cols-2">
+          <div className="space-y-7 sm:flex sm:flex-col sm:justify-center sm:items-center lg:items-start">
             <h1 className="text-4xl font-semibold">
               Happy <span className="text-primary">Chinese New Year,</span> 20%
               discount for you today
             </h1>
             <button className="btn-error">Subscribe Course</button>
           </div>
-          <div className="w-1/2 -mb-10">
+          <div className="w-1/2 -mb-10 hidden md:flex">
             <img src="https://i.ibb.co/4SRSvk4/image3.png" alt="" />
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 pb-16">
-        <div className="w-2/3 space-y-4">
+      <div className="md:grid grid-cols-2 pb-16">
+        <div className="md:w-2/3 space-y-4 md:text-start text-center">
           <h1 className="text-4xl font-semibold">
             Why do we <span className="text-primary">exist?</span>
           </h1>
@@ -64,7 +64,7 @@ const Courses = () => {
             Because we know that many people or companies have the same problem
             when it comes to how difficult it is to improve their skills
           </p>
-          <div className="flex gap-4 items-center border-b pb-2">
+          <div className="flex gap-4 items-center md:justify-start justify-center border-b pb-2">
             <div className="avatar">
               <div className="w-12 rounded-full">
                 <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -76,7 +76,7 @@ const Courses = () => {
             </div>
           </div>
           
-          <div className="flex items-center gap-10">
+          <div className="flex items-center md:justify-start justify-center py-5 gap-10">
           <div>
             <h1 className="text-4xl font-semibold">100+</h1>
             <p className="text-xs">Updated Material</p>
@@ -86,25 +86,24 @@ const Courses = () => {
             <p className="text-xs">Member Join</p>
           </div>
           </div>
-
         </div>
-        <div className="grid grid-cols-2">
-            <div className="space-y-2 p-4 ">
+        <div className="md:grid grid-cols-2">
+            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
                 <p className="text-5xl">icon</p>
                 <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div className="space-y-2 p-4 ">
+            <div className="space-y-2 p-4 flex flex-col md:justify-start justify-center md:items-start items-center">
                 <p className="text-5xl">icon</p>
                 <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div className="space-y-2 p-4 ">
+            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
                 <p className="text-5xl">icon</p>
                 <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div className="space-y-2 p-4 ">
+            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
                 <p className="text-5xl">icon</p>
                 <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

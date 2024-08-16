@@ -101,16 +101,16 @@ const PopularCourses = () => {
   });
 
   return (
-    <div className="bg-primary h-screen py-10">
+    <div className="bg-primary h-screen flex flex-col justify-center items-center py-10">
       <div className="text-center text-white">
         <h1 className="text-4xl font-semibold">Popular courses of the week</h1>
-        <p className="md:w-1/5 mx-auto text-xs py-3">
+        <p className="md:w-1/2 mx-auto text-xs py-3">
           List of the most popular lists that are often studied by our members
         </p>
       </div>
       
       {/* Cards Slider */}
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
         <div className="keen-slider" ref={sliderRef}>
           {cardDetails.map((card) => (
             <div key={card.id} className="keen-slider__slide bg-white rounded-lg">
