@@ -1,5 +1,6 @@
 import Courses from './Courses/Courses';
 import PopularCourses from './Courses/PopularCourses';
+import Footer from './Footer/Footer';
 import Hero from './Hero/Hero';
 import Navbar from './Navbar/Navbar';
 import SkillShoot from './SkillShoot/SkillShoot';
@@ -16,6 +17,7 @@ const LandingPage = () => {
             <SkillShoot/>
             <Subscribe/>
             <Testimonial/>
+            <Footer/>
         </div>
     );
 };

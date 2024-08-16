@@ -49,10 +49,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="">
-            <a className="text-3xl">Akash</a>
+            <a className="md:text-3xl text-2xl font-semibold">Skill <span className="text-primary">Shoot</span></a>
           </div>
           <div className="hidden lg:flex">
-            <ul className="menu menu-horizontal font-semibold text-md px-1">
+            <ul className="menu menu-horizontal text-md px-1">
               {navItems}
             </ul>
           </div>
