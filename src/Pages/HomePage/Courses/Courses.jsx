@@ -89,23 +89,31 @@ const Courses = () => {
         </div>
         <div className="md:grid grid-cols-2">
             <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
-                <p className="text-5xl">icon</p>
+                <div className="w-16">
+                  <img src="https://i.ibb.co/vLs2GmT/1.png" alt="" />
+                </div>
                 <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className="space-y-2 p-4 flex flex-col md:justify-start justify-center md:items-start items-center">
-                <p className="text-5xl">icon</p>
-                <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
+                <div className="w-16">
+                  <img src="https://i.ibb.co/HN5Kdbh/2.png" alt="" />
+                </div>
+                <h2 className="text-secondary text-2xl font-semibold">Unprofessional Mentor</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
-                <p className="text-5xl">icon</p>
-                <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
+            <div className="w-16">
+                  <img src="https://i.ibb.co/71NdznD/3.png" alt="" />
+                </div>
+                <h2 className="text-secondary text-2xl font-semibold">Video Quality</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
-                <p className="text-5xl">icon</p>
-                <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
+            <div className="w-16">
+                  <img src="https://i.ibb.co/jD2DRXv/4.png" alt="" />
+                </div>
+                <h2 className="text-secondary text-2xl font-semibold">High Price</h2>
                 <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
