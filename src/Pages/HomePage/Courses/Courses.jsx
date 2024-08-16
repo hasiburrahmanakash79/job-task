@@ -1,5 +1,3 @@
-
-
 const Courses = () => {
   return (
     <div id="about" className="container mx-auto p-4 pt-20">
@@ -12,31 +10,44 @@ const Courses = () => {
           they have asked us more than 3 times to teach their employees <br />{" "}
           about various things. to improve their skills
         </p>
-        <div className="grid grid-cols-6 items-center w-2/3 mx-auto gap-20 pt-7">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg"
-            alt=""
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
-            alt=""
-          />
-          <img
-            src="https://static-00.iconduck.com/assets.00/paypal-icon-2048x547-tu0aql1a.png"
-            alt=""
-          />
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1Q2lh7aweiNuE3LObL2pp_kWhtffSJckKw&s"
-            alt=""
-          />
-          <img
-            src="https://brandlogos.net/wp-content/uploads/2023/10/dribbble-logo_brandlogos.net_if8uk.png"
-            alt=""
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Evaly_logo.svg/2560px-Evaly_logo.svg.png"
-            alt=""
-          />
+        <div className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2  items-center w-2/3 mx-auto gap-20 pt-7">
+          <div className="w-20 mx-auto">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/58/Uber_logo_2018.svg"
+              alt=""
+            />
+          </div>
+          <div className="w-20 mx-auto">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png"
+              alt=""
+            />
+          </div>
+
+          <div className="w-20 mx-auto">
+            <img
+              src="https://static-00.iconduck.com/assets.00/paypal-icon-2048x547-tu0aql1a.png"
+              alt=""
+            />
+          </div>
+          <div className="w-20 mx-auto">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1Q2lh7aweiNuE3LObL2pp_kWhtffSJckKw&s"
+              alt=""
+            />
+          </div>
+          <div className="w-20 mx-auto">
+            <img
+              src="https://brandlogos.net/wp-content/uploads/2023/10/dribbble-logo_brandlogos.net_if8uk.png"
+              alt=""
+            />
+          </div>
+          <div className="w-20 mx-auto">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Evaly_logo.svg/2560px-Evaly_logo.svg.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
 
@@ -71,51 +82,71 @@ const Courses = () => {
               </div>
             </div>
             <div>
-                <p className="font-semibold">Jerony Pulquosta</p>
-                <p className="text-xs">CEO Skill Shoot</p>
+              <p className="font-semibold">Jerony Pulquosta</p>
+              <p className="text-xs">CEO Skill Shoot</p>
             </div>
           </div>
-          
+
           <div className="flex items-center md:justify-start justify-center py-5 gap-10">
-          <div>
-            <h1 className="text-4xl font-semibold">100+</h1>
-            <p className="text-xs">Updated Material</p>
-          </div>
-          <div>
-            <h1 className="text-4xl font-semibold">15k</h1>
-            <p className="text-xs">Member Join</p>
-          </div>
+            <div>
+              <h1 className="text-4xl font-semibold">100+</h1>
+              <p className="text-xs">Updated Material</p>
+            </div>
+            <div>
+              <h1 className="text-4xl font-semibold">15k</h1>
+              <p className="text-xs">Member Join</p>
+            </div>
           </div>
         </div>
         <div className="md:grid grid-cols-2">
-            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
-                <div className="w-16">
-                  <img src="https://i.ibb.co/vLs2GmT/1.png" alt="" />
-                </div>
-                <h2 className="text-secondary text-2xl font-semibold">Material Limitations</h2>
-                <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div className="space-y-2 p-4 flex flex-col md:justify-start justify-center md:items-start items-center">
-                <div className="w-16">
-                  <img src="https://i.ibb.co/HN5Kdbh/2.png" alt="" />
-                </div>
-                <h2 className="text-secondary text-2xl font-semibold">Unprofessional Mentor</h2>
-                <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
+          <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
             <div className="w-16">
-                  <img src="https://i.ibb.co/71NdznD/3.png" alt="" />
-                </div>
-                <h2 className="text-secondary text-2xl font-semibold">Video Quality</h2>
-                <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <img src="https://i.ibb.co/vLs2GmT/1.png" alt="" />
             </div>
-            <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
+            <h2 className="text-secondary text-2xl font-semibold">
+              Material Limitations
+            </h2>
+            <p className="text-xs md:w-2/3 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div className="space-y-2 p-4 flex flex-col md:justify-start justify-center md:items-start items-center">
             <div className="w-16">
-                  <img src="https://i.ibb.co/jD2DRXv/4.png" alt="" />
-                </div>
-                <h2 className="text-secondary text-2xl font-semibold">High Price</h2>
-                <p className="text-xs md:w-2/3 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <img src="https://i.ibb.co/HN5Kdbh/2.png" alt="" />
             </div>
+            <h2 className="text-secondary text-2xl font-semibold">
+              Unprofessional Mentor
+            </h2>
+            <p className="text-xs md:w-2/3 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
+            <div className="w-16">
+              <img src="https://i.ibb.co/71NdznD/3.png" alt="" />
+            </div>
+            <h2 className="text-secondary text-2xl font-semibold">
+              Video Quality
+            </h2>
+            <p className="text-xs md:w-2/3 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div className="space-y-2 p-4  flex flex-col md:justify-start justify-center md:items-start items-center">
+            <div className="w-16">
+              <img src="https://i.ibb.co/jD2DRXv/4.png" alt="" />
+            </div>
+            <h2 className="text-secondary text-2xl font-semibold">
+              High Price
+            </h2>
+            <p className="text-xs md:w-2/3 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
         </div>
       </div>
     </div>
