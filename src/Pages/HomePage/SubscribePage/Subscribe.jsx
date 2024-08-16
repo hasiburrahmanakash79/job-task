@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 const Subscribe = () => {
   return (
     <div id="subscribe" className="md:w-2/3 mx-auto md:h-screen p-3">
-      <div className="text-center py-10">
+      <div className="text-center pt-16 pb-7">
         <h1 className="text-3xl font-semibold">Subscribe with us now</h1>
         <p className="text-xs leading-6 md:w-1/3 mx-auto p-3">
           by subscribing now you will be able to access the material easily and
